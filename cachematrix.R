@@ -7,7 +7,7 @@
 ## > cacheSolve(ma) # shows message 'getting cached inverse matrix'
 
 ## makeCacheMatrix
-## creates an CacheMatrix used to store a matrix and its solution.
+##  creates an CacheMatrix used to store a matrix and its solution.
 ## Arguments
 ##  x : A square numeric matrix
 ## Returns
@@ -32,11 +32,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve
-## This function 'solves' a matrix using the solve function
-## then caches the solution in the 'CacheMatrix'. The function will
-## read the cached solution after the first call using the same 'CacheMatrix' object.
+##  This function 'solves' a matrix using the solve function
+##  then caches the solution in the 'CacheMatrix'. The function will
+##  read the cached solution after the first call using the same 'CacheMatrix' object.
 ## Arguments
-## x : CacheMatrix object
+##  x : CacheMatrix object
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   inv_matrix <- x$getinv()
