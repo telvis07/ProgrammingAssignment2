@@ -32,7 +32,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve
-##  This function 'solves' a matrix using the solve function
+##  This function computes the inverse matrix using the solve() function
 ##  then caches the solution in the 'CacheMatrix'. The function will
 ##  read the cached solution after the first call using the same 'CacheMatrix' object.
 ## Arguments
